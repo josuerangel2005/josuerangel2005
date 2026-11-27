@@ -5,30 +5,30 @@
   <text x="430" y="20" text-anchor="middle" font-size="11" fill="#6e7681" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">josuerangel2005@github: ~ — git habits</text>
   <g font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"><text x="24" y="58" fill="#c9d1d9"><tspan fill="#7ee787">❯</tspan> git log --since=1.year --author=josuerangel2005 | habits</text>
   <text x="24" y="90" fill="#79c0ff" font-weight="bold">commits by hour (author local time)</text>
-  <rect x="24" y="186.9" width="16" height="33.1" rx="2" fill="#79c0ff" opacity="0.62"/>
-  <rect x="44" y="218.8" width="16" height="1.2" rx="2" fill="#79c0ff" opacity="0.46"/>
+  <rect x="24" y="178.5" width="16" height="41.5" rx="2" fill="#79c0ff" opacity="0.66"/>
+  <rect x="44" y="218.2" width="16" height="1.8" rx="2" fill="#79c0ff" opacity="0.46"/>
   <rect x="64" y="218" width="16" height="2" fill="#30363d"/>
-  <rect x="84" y="185.7" width="16" height="34.3" rx="2" fill="#79c0ff" opacity="0.62"/>
-  <rect x="104" y="194.0" width="16" height="26.0" rx="2" fill="#79c0ff" opacity="0.58"/>
-  <rect x="124" y="195.2" width="16" height="24.8" rx="2" fill="#79c0ff" opacity="0.57"/>
-  <rect x="144" y="214.1" width="16" height="5.9" rx="2" fill="#79c0ff" opacity="0.48"/>
-  <rect x="164" y="197.5" width="16" height="22.5" rx="2" fill="#79c0ff" opacity="0.56"/>
-  <rect x="184" y="195.2" width="16" height="24.8" rx="2" fill="#79c0ff" opacity="0.57"/>
-  <rect x="204" y="189.2" width="16" height="30.8" rx="2" fill="#79c0ff" opacity="0.60"/>
-  <rect x="224" y="188.1" width="16" height="31.9" rx="2" fill="#79c0ff" opacity="0.61"/>
-  <rect x="244" y="191.6" width="16" height="28.4" rx="2" fill="#79c0ff" opacity="0.59"/>
-  <rect x="264" y="181.0" width="16" height="39.0" rx="2" fill="#79c0ff" opacity="0.65"/>
-  <rect x="284" y="191.6" width="16" height="28.4" rx="2" fill="#79c0ff" opacity="0.59"/>
-  <rect x="304" y="159.7" width="16" height="60.3" rx="2" fill="#79c0ff" opacity="0.75"/>
-  <rect x="324" y="184.5" width="16" height="35.5" rx="2" fill="#79c0ff" opacity="0.63"/>
-  <rect x="344" y="159.7" width="16" height="60.3" rx="2" fill="#79c0ff" opacity="0.75"/>
-  <rect x="364" y="163.2" width="16" height="56.8" rx="2" fill="#79c0ff" opacity="0.73"/>
-  <rect x="384" y="153.8" width="16" height="66.2" rx="2" fill="#79c0ff" opacity="0.78"/>
-  <rect x="404" y="120.6" width="16" height="99.4" rx="2" fill="#79c0ff" opacity="0.95"/>
-  <rect x="424" y="139.6" width="16" height="80.4" rx="2" fill="#79c0ff" opacity="0.85"/>
-  <rect x="444" y="110.0" width="16" height="110.0" rx="2" fill="#d2a8ff" opacity="1.00"/>
-  <rect x="464" y="162.0" width="16" height="58.0" rx="2" fill="#79c0ff" opacity="0.74"/>
-  <rect x="484" y="158.5" width="16" height="61.5" rx="2" fill="#79c0ff" opacity="0.76"/>
+  <rect x="84" y="218" width="16" height="2" fill="#30363d"/>
+  <rect x="104" y="218.2" width="16" height="1.8" rx="2" fill="#79c0ff" opacity="0.46"/>
+  <rect x="124" y="212.8" width="16" height="7.2" rx="2" fill="#79c0ff" opacity="0.49"/>
+  <rect x="144" y="218.2" width="16" height="1.8" rx="2" fill="#79c0ff" opacity="0.46"/>
+  <rect x="164" y="211.0" width="16" height="9.0" rx="2" fill="#79c0ff" opacity="0.50"/>
+  <rect x="184" y="209.2" width="16" height="10.8" rx="2" fill="#79c0ff" opacity="0.50"/>
+  <rect x="204" y="212.8" width="16" height="7.2" rx="2" fill="#79c0ff" opacity="0.49"/>
+  <rect x="224" y="209.2" width="16" height="10.8" rx="2" fill="#79c0ff" opacity="0.50"/>
+  <rect x="244" y="198.4" width="16" height="21.6" rx="2" fill="#79c0ff" opacity="0.56"/>
+  <rect x="264" y="182.1" width="16" height="37.9" rx="2" fill="#79c0ff" opacity="0.64"/>
+  <rect x="284" y="183.9" width="16" height="36.1" rx="2" fill="#79c0ff" opacity="0.63"/>
+  <rect x="304" y="162.3" width="16" height="57.7" rx="2" fill="#79c0ff" opacity="0.74"/>
+  <rect x="324" y="178.5" width="16" height="41.5" rx="2" fill="#79c0ff" opacity="0.66"/>
+  <rect x="344" y="151.5" width="16" height="68.5" rx="2" fill="#79c0ff" opacity="0.79"/>
+  <rect x="364" y="169.5" width="16" height="50.5" rx="2" fill="#79c0ff" opacity="0.70"/>
+  <rect x="384" y="149.7" width="16" height="70.3" rx="2" fill="#79c0ff" opacity="0.80"/>
+  <rect x="404" y="110.0" width="16" height="110.0" rx="2" fill="#d2a8ff" opacity="1.00"/>
+  <rect x="424" y="140.7" width="16" height="79.3" rx="2" fill="#79c0ff" opacity="0.85"/>
+  <rect x="444" y="142.5" width="16" height="77.5" rx="2" fill="#79c0ff" opacity="0.84"/>
+  <rect x="464" y="183.9" width="16" height="36.1" rx="2" fill="#79c0ff" opacity="0.63"/>
+  <rect x="484" y="189.3" width="16" height="30.7" rx="2" fill="#79c0ff" opacity="0.60"/>
   <text x="24" y="236" font-size="10" fill="#6e7681">00</text>
   <text x="144" y="236" font-size="10" fill="#6e7681">06</text>
   <text x="264" y="236" font-size="10" fill="#6e7681">12</text>
@@ -36,25 +36,25 @@
   <text x="484" y="236" font-size="10" fill="#6e7681">23</text>
   <text x="560" y="90" fill="#79c0ff" font-weight="bold">commits by weekday</text>
   <text x="560" y="112" fill="#79c0ff" font-weight="bold">Mon</text>
-  <rect x="600" y="102" width="82.3" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
-  <text x="790" y="112" fill="#c9d1d9">80</text>
+  <rect x="600" y="102" width="58.1" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
+  <text x="790" y="112" fill="#c9d1d9">41</text>
   <text x="560" y="129" fill="#79c0ff" font-weight="bold">Tue</text>
-  <rect x="600" y="119" width="74.1" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
-  <text x="790" y="129" fill="#c9d1d9">72</text>
+  <rect x="600" y="119" width="31.2" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
+  <text x="790" y="129" fill="#c9d1d9">22</text>
   <text x="560" y="146" fill="#79c0ff" font-weight="bold">Wed</text>
-  <rect x="600" y="136" width="149.1" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
-  <text x="790" y="146" fill="#c9d1d9">145</text>
+  <rect x="600" y="136" width="60.9" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
+  <text x="790" y="146" fill="#c9d1d9">43</text>
   <text x="560" y="163" fill="#79c0ff" font-weight="bold">Thu</text>
-  <rect x="600" y="153" width="159.4" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
-  <text x="790" y="163" fill="#c9d1d9">155</text>
+  <rect x="600" y="153" width="117.6" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
+  <text x="790" y="163" fill="#c9d1d9">83</text>
   <text x="560" y="180" fill="#79c0ff" font-weight="bold">Fri</text>
   <rect x="600" y="170" width="180.0" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
-  <text x="790" y="180" fill="#c9d1d9">175</text>
+  <text x="790" y="180" fill="#c9d1d9">127</text>
   <text x="560" y="197" fill="#79c0ff" font-weight="bold">Sat</text>
-  <rect x="600" y="187" width="133.7" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
-  <text x="790" y="197" fill="#c9d1d9">130</text>
+  <rect x="600" y="187" width="87.9" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
+  <text x="790" y="197" fill="#c9d1d9">62</text>
   <text x="560" y="214" fill="#79c0ff" font-weight="bold">Sun</text>
-  <rect x="600" y="204" width="108.0" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
-  <text x="790" y="214" fill="#c9d1d9">105</text>
-  <text x="24" y="268" fill="#c9d1d9">→ <tspan fill="#d2a8ff" font-weight="bold">862</tspan> commits  ·  busiest day <tspan fill="#d2a8ff" font-weight="bold">Fri</tspan>  ·  peak <tspan fill="#d2a8ff" font-weight="bold">21:00-22:00</tspan>  ·  <tspan fill="#7ee787" font-weight="bold">evening coder</tspan></text></g>
+  <rect x="600" y="204" width="100.6" height="11" rx="2" fill="#d2a8ff" opacity="0.85"/>
+  <text x="790" y="214" fill="#c9d1d9">71</text>
+  <text x="24" y="268" fill="#c9d1d9">→ <tspan fill="#d2a8ff" font-weight="bold">449</tspan> commits  ·  busiest day <tspan fill="#d2a8ff" font-weight="bold">Fri</tspan>  ·  peak <tspan fill="#d2a8ff" font-weight="bold">19:00-20:00</tspan>  ·  <tspan fill="#7ee787" font-weight="bold">evening coder</tspan></text></g>
 </svg>
