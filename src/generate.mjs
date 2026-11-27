@@ -93,15 +93,16 @@ async function fetchHabits(login) {
 }
 
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+// Palette from the system "Gentleman-Cute" theme (ghostty.conf).
 const C = {
-  bg: "#0d1117",
-  win: "#161b22",
-  border: "#30363d",
-  text: "#c9d1d9",
-  dim: "#6e7681",
-  key: "#79c0ff",
-  accent: "#d2a8ff",
-  green: "#7ee787",
+  bg: "#060407",
+  win: "#060407",
+  border: "#2A1720",
+  text: "#F6EFF3",
+  dim: "#76616B",
+  key: "#A9C7EE",
+  accent: "#F095C8",
+  green: "#B4E7C7",
 };
 const FONT = `font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"`;
 
@@ -109,7 +110,7 @@ function windowFrame(width, height, title, body) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
   <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="10" fill="${C.win}" stroke="${C.border}"/>
   <path d="M0.5 32 H${width - 0.5}" stroke="${C.border}"/>
-  <circle cx="20" cy="16" r="6" fill="#ff5f57"/><circle cx="40" cy="16" r="6" fill="#febc2e"/><circle cx="60" cy="16" r="6" fill="#28c840"/>
+  <circle cx="20" cy="16" r="6" fill="#FF718F"/><circle cx="40" cy="16" r="6" fill="#F2B86D"/><circle cx="60" cy="16" r="6" fill="#B4E7C7"/>
   <text x="${width / 2}" y="20" text-anchor="middle" font-size="11" fill="${C.dim}" ${FONT}>${esc(title)}</text>
   ${body}
 </svg>
@@ -192,7 +193,7 @@ function renderCard(stats) {
   }
   y += step + 4;
   // Color palette blocks, like fastfetch
-  const palette = ["#ff7b72", "#ffa657", "#e3b341", "#7ee787", "#79c0ff", "#d2a8ff", "#f778ba", "#c9d1d9"];
+  const palette = ["#FF718F", "#F2B86D", "#E0C27A", "#B4E7C7", "#A9C7EE", "#F095C8", "#B9E3E8", "#F6EFF3"];
   palette.forEach((c, i) => rows.push(`<rect x="${x + i * 26}" y="${y - 12}" width="26" height="14" fill="${c}"/>`));
   y += step + 6;
   rows.push(`<text x="${x}" y="${y}" fill="${C.green}">❯ <tspan fill="${C.text}">_</tspan></text>`);
