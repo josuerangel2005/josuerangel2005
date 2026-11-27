@@ -32,7 +32,7 @@ jobs:
           # :root targets only the outer SVG; plain `svg` would also paint the
           # isocalendar and hide the stats beneath it.
           extras_css: |
-            :root { background: #161b22; border: 1px solid #30363d; border-radius: 10px; color: #c9d1d9; }
+            :root { box-sizing: border-box; background: #161b22; border: 1px solid #30363d; border-radius: 10px; color: #c9d1d9; }
             h1, h2, h3 { color: #79c0ff !important; }
             .field { color: #c9d1d9; }
             .field.language.details small { color: #6e7681; }
