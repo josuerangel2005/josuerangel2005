@@ -106,14 +106,17 @@ const C = {
 };
 const FONT = `font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"`;
 
-// Blinking block cursor (SMIL works inside <img> on GitHub).
+// Blinking block cursor. Uses a CSS animation: GitHub serves SVGs with a
+// CSP that blocks SMIL (<animate>) but allows inline styles.
 const cursor = (x, y, h = 14) =>
-  `<rect x="${x}" y="${y - h + 3}" width="${Math.round(h * 0.6)}" height="${h}" fill="${C.text}"><animate attributeName="opacity" values="1;0" dur="1.06s" calcMode="discrete" repeatCount="indefinite"/></rect>`;
+  `<rect class="cursor" x="${x}" y="${y - h + 3}" width="${Math.round(h * 0.6)}" height="${h}" fill="${C.text}"/>`;
+const CURSOR_CSS = `<style>@keyframes blink{50%{opacity:0}}.cursor{animation:blink 1.06s steps(1) infinite}</style>`;
 
 function windowFrame(width, height, title, body) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
   <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="10" fill="${C.win}" stroke="${C.border}"/>
   <path d="M0.5 32 H${width - 0.5}" stroke="${C.border}"/>
+  ${CURSOR_CSS}
   <circle cx="20" cy="16" r="6" fill="#FF718F"/><circle cx="40" cy="16" r="6" fill="#F2B86D"/><circle cx="60" cy="16" r="6" fill="#B4E7C7"/>
   <text x="${width / 2}" y="20" text-anchor="middle" font-size="11" fill="${C.dim}" ${FONT}>${esc(title)}</text>
   ${body}
