@@ -205,51 +205,65 @@ function renderCard(stats) {
 
 function renderHabits({ hours, days, count }) {
   const W = 860;
-  const H = 300;
+  const H = 320;
+  const cell = 8; // square cell size
+  const gap = 2;
   const parts = [];
   parts.push(
-    `<text x="24" y="58" fill="${C.text}"><tspan fill="${C.green}">❯</tspan> git log --since=1.year --author=${esc(profile.login)} | habits</text>`,
+    `<text x="24" y="60" fill="${C.text}"><tspan fill="${C.green}">❯</tspan> git log --since=1.year --author=${esc(profile.login)} | habits</text>`,
   );
-  // Hour histogram
-  parts.push(`<text x="24" y="90" fill="${C.key}" font-weight="bold">commits by hour (author local time)</text>`);
+
+  // Hour histogram: each column is a stack of square cells.
+  parts.push(`<text x="24" y="96" fill="${C.key}" font-weight="bold">commits by hour (author local time)</text>`);
   const maxH = Math.max(...hours, 1);
-  const chartBottom = 220;
-  const chartH = 110;
-  const colW = 20;
+  const peak = hours.indexOf(maxH);
+  const levels = 12;
+  const base = 230; // bottom of the histogram
+  const colW = 21;
   hours.forEach((v, i) => {
-    const h = (v / maxH) * chartH;
     const cx = 24 + i * colW;
-    parts.push(
-      v
-        ? `<rect x="${cx}" y="${(chartBottom - h).toFixed(1)}" width="${colW - 4}" height="${h.toFixed(1)}" rx="2" fill="${v === maxH ? C.accent : C.key}" opacity="${(0.45 + 0.55 * (v / maxH)).toFixed(2)}"/>`
-        : `<rect x="${cx}" y="${chartBottom - 2}" width="${colW - 4}" height="2" fill="${C.border}"/>`,
-    );
+    const n = v ? Math.max(1, Math.round((v / maxH) * levels)) : 0;
+    if (!n) {
+      parts.push(`<rect x="${cx + 4}" y="${base - 2}" width="${colW - 12}" height="1.5" fill="${C.border}"/>`);
+      return;
+    }
+    const fill = i === peak ? C.accent : C.key;
+    for (let k = 0; k < n; k++) {
+      parts.push(`<rect x="${cx}" y="${base - (k + 1) * (cell + gap) + gap}" width="${colW - 4}" height="${cell}" fill="${fill}" opacity="0.9"/>`);
+    }
   });
   [0, 6, 12, 18, 23].forEach((h) =>
-    parts.push(`<text x="${24 + h * colW}" y="${chartBottom + 16}" font-size="10" fill="${C.dim}">${String(h).padStart(2, "0")}</text>`),
+    parts.push(`<text x="${24 + h * colW}" y="${base + 16}" font-size="10" fill="${C.dim}">${String(h).padStart(2, "0")}</text>`),
   );
 
-  // Weekday bars
+  // Weekday rows: filled cells over a dim track.
   const names = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   const maxD = Math.max(...days, 1);
-  const dx = 560;
-  parts.push(`<text x="${dx}" y="90" fill="${C.key}" font-weight="bold">commits by weekday</text>`);
+  const busiest = days.indexOf(maxD);
+  const dx = 580;
+  const track = 18;
+  parts.push(`<text x="${dx}" y="96" fill="${C.key}" font-weight="bold">commits by weekday</text>`);
   days.forEach((v, i) => {
-    const yy = 112 + i * 17;
-    const w = (v / maxD) * 180;
+    const yy = 118 + i * 18;
+    const n = v ? Math.max(1, Math.round((v / maxD) * track)) : 0;
     parts.push(`<text x="${dx}" y="${yy}" fill="${C.key}" font-weight="bold">${names[i]}</text>`);
-    parts.push(`<rect x="${dx + 40}" y="${yy - 10}" width="${Math.max(w, 2).toFixed(1)}" height="11" rx="2" fill="${C.accent}" opacity="0.85"/>`);
-    parts.push(`<text x="${dx + 230}" y="${yy}" fill="${C.text}">${v}</text>`);
+    for (let k = 0; k < track; k++) {
+      const on = k < n;
+      parts.push(
+        `<rect x="${dx + 36 + k * (cell + 1)}" y="${yy - 10}" width="${cell}" height="11" fill="${on ? (i === busiest ? C.accent : C.key) : C.border}" opacity="${on ? 0.9 : 0.5}"/>`,
+      );
+    }
+    parts.push(`<text x="${dx + 36 + track * (cell + 1) + 8}" y="${yy}" fill="${C.text}">${v}</text>`);
   });
 
-  // Summary
-  const busiest = names[days.indexOf(maxD)];
-  const peak = hours.indexOf(maxH);
+  // Summary + idle prompt
   const pad = (n) => String(n).padStart(2, "0");
   const kind = peak < 6 ? "night owl" : peak < 12 ? "early bird" : peak < 19 ? "daytime coder" : "evening coder";
+  const sep = `<tspan fill="${C.dim}">  ·  </tspan>`;
   parts.push(
-    `<text x="24" y="268" fill="${C.text}">→ <tspan fill="${C.accent}" font-weight="bold">${count}</tspan> commits  ·  busiest day <tspan fill="${C.accent}" font-weight="bold">${busiest}</tspan>  ·  peak <tspan fill="${C.accent}" font-weight="bold">${pad(peak)}:00-${pad((peak + 1) % 24)}:00</tspan>  ·  <tspan fill="${C.green}" font-weight="bold">${kind}</tspan></text>`,
+    `<text x="24" y="276" fill="${C.text}" xml:space="preserve"><tspan fill="${C.green}">→</tspan> <tspan fill="${C.key}" font-weight="bold">${count}</tspan> commits${sep}busiest day <tspan fill="${C.key}" font-weight="bold">${names[busiest]}</tspan>${sep}peak <tspan fill="${C.key}" font-weight="bold">${pad(peak)}:00–${pad((peak + 1) % 24)}:00</tspan>${sep}<tspan fill="${C.accent}" font-weight="bold">${kind}</tspan></text>`,
   );
+  parts.push(`<text x="24" y="302" fill="${C.green}">❯</text>`);
   return windowFrame(W, H, `${profile.login}@${profile.host}: ~ — git habits`, `<g font-size="12" ${FONT}>${parts.join("\n  ")}</g>`);
 }
 
