@@ -106,6 +106,10 @@ const C = {
 };
 const FONT = `font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"`;
 
+// Blinking block cursor (SMIL works inside <img> on GitHub).
+const cursor = (x, y, h = 14) =>
+  `<rect x="${x}" y="${y - h + 3}" width="${Math.round(h * 0.6)}" height="${h}" fill="${C.text}"><animate attributeName="opacity" values="1;0" dur="1.06s" calcMode="discrete" repeatCount="indefinite"/></rect>`;
+
 function windowFrame(width, height, title, body) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
   <rect x="0.5" y="0.5" width="${width - 1}" height="${height - 1}" rx="10" fill="${C.win}" stroke="${C.border}"/>
@@ -196,7 +200,7 @@ function renderCard(stats) {
   const palette = ["#FF718F", "#F2B86D", "#E0C27A", "#B4E7C7", "#A9C7EE", "#F095C8", "#B9E3E8", "#F6EFF3"];
   palette.forEach((c, i) => rows.push(`<rect x="${x + i * 26}" y="${y - 12}" width="26" height="14" fill="${c}"/>`));
   y += step + 6;
-  rows.push(`<text x="${x}" y="${y}" fill="${C.green}">❯ <tspan fill="${C.text}">_</tspan></text>`);
+  rows.push(`<text x="${x}" y="${y}" fill="${C.green}">❯</text>`, cursor(x + 18, y));
 
   const H = Math.max(artTop + ascii.length * artLine + 20, y + 24);
   const body = `<g font-size="10" fill="${C.accent}" opacity="0.9" ${FONT}>${art}</g>
@@ -264,7 +268,7 @@ function renderHabits({ hours, days, count }) {
   parts.push(
     `<text x="24" y="276" fill="${C.text}" xml:space="preserve"><tspan fill="${C.green}">→</tspan> <tspan fill="${C.key}" font-weight="bold">${count}</tspan> commits${sep}busiest day <tspan fill="${C.key}" font-weight="bold">${names[busiest]}</tspan>${sep}peak <tspan fill="${C.key}" font-weight="bold">${pad(peak)}:00–${pad((peak + 1) % 24)}:00</tspan>${sep}<tspan fill="${C.accent}" font-weight="bold">${kind}</tspan></text>`,
   );
-  parts.push(`<text x="24" y="302" fill="${C.green}">❯</text>`);
+  parts.push(`<text x="24" y="302" fill="${C.green}">❯</text>`, cursor(24 + 16, 302, 13));
   return windowFrame(W, H, `${profile.login}@${profile.host}: ~ — git habits`, `<g font-size="12" ${FONT}>${parts.join("\n  ")}</g>`);
 }
 
