@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="320" viewBox="0 0 860 320">
   <rect x="0.5" y="0.5" width="859" height="319" rx="10" fill="#060407" stroke="#2A1720"/>
   <path d="M0.5 32 H859.5" stroke="#2A1720"/>
+  <style>@keyframes blink{50%{opacity:0}}.cursor{animation:blink 1.06s steps(1) infinite}</style>
   <circle cx="20" cy="16" r="6" fill="#FF718F"/><circle cx="40" cy="16" r="6" fill="#F2B86D"/><circle cx="60" cy="16" r="6" fill="#B4E7C7"/>
   <text x="430" y="20" text-anchor="middle" font-size="11" fill="#76616B" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">josuerangel2005@github: ~ — git habits</text>
   <g font-size="12" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"><text x="24" y="60" fill="#F6EFF3"><tspan fill="#B4E7C7">❯</tspan> git log --since=1.year --author=josuerangel2005 | habits</text>
@@ -9,6 +10,7 @@
   <rect x="24" y="212" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="24" y="202" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="24" y="192" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
+  <rect x="24" y="182" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="45" y="222" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="70" y="228" width="9" height="1.5" fill="#2A1720"/>
   <rect x="91" y="228" width="9" height="1.5" fill="#2A1720"/>
@@ -39,6 +41,7 @@
   <rect x="339" y="212" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="339" y="202" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="339" y="192" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
+  <rect x="339" y="182" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="360" y="222" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="360" y="212" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="360" y="202" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
@@ -51,6 +54,7 @@
   <rect x="381" y="202" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="381" y="192" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="381" y="182" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
+  <rect x="381" y="172" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="402" y="222" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="402" y="212" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
   <rect x="402" y="202" width="17" height="8" fill="#A9C7EE" opacity="0.9"/>
@@ -175,13 +179,13 @@
   <rect x="697" y="162" width="8" height="11" fill="#A9C7EE" opacity="0.9"/>
   <rect x="706" y="162" width="8" height="11" fill="#A9C7EE" opacity="0.9"/>
   <rect x="715" y="162" width="8" height="11" fill="#A9C7EE" opacity="0.9"/>
-  <rect x="724" y="162" width="8" height="11" fill="#2A1720" opacity="0.5"/>
+  <rect x="724" y="162" width="8" height="11" fill="#A9C7EE" opacity="0.9"/>
   <rect x="733" y="162" width="8" height="11" fill="#2A1720" opacity="0.5"/>
   <rect x="742" y="162" width="8" height="11" fill="#2A1720" opacity="0.5"/>
   <rect x="751" y="162" width="8" height="11" fill="#2A1720" opacity="0.5"/>
   <rect x="760" y="162" width="8" height="11" fill="#2A1720" opacity="0.5"/>
   <rect x="769" y="162" width="8" height="11" fill="#2A1720" opacity="0.5"/>
-  <text x="786" y="172" fill="#F6EFF3">88</text>
+  <text x="786" y="172" fill="#F6EFF3">89</text>
   <text x="580" y="190" fill="#A9C7EE" font-weight="bold">Fri</text>
   <rect x="616" y="180" width="8" height="11" fill="#F095C8" opacity="0.9"/>
   <rect x="625" y="180" width="8" height="11" fill="#F095C8" opacity="0.9"/>
@@ -201,7 +205,7 @@
   <rect x="751" y="180" width="8" height="11" fill="#F095C8" opacity="0.9"/>
   <rect x="760" y="180" width="8" height="11" fill="#F095C8" opacity="0.9"/>
   <rect x="769" y="180" width="8" height="11" fill="#F095C8" opacity="0.9"/>
-  <text x="786" y="190" fill="#F6EFF3">128</text>
+  <text x="786" y="190" fill="#F6EFF3">127</text>
   <text x="580" y="208" fill="#A9C7EE" font-weight="bold">Sat</text>
   <rect x="616" y="198" width="8" height="11" fill="#A9C7EE" opacity="0.9"/>
   <rect x="625" y="198" width="8" height="11" fill="#A9C7EE" opacity="0.9"/>
@@ -244,5 +248,5 @@
   <text x="786" y="226" fill="#F6EFF3">71</text>
   <text x="24" y="276" fill="#F6EFF3" xml:space="preserve"><tspan fill="#B4E7C7">→</tspan> <tspan fill="#A9C7EE" font-weight="bold">455</tspan> commits<tspan fill="#76616B">  ·  </tspan>busiest day <tspan fill="#A9C7EE" font-weight="bold">Fri</tspan><tspan fill="#76616B">  ·  </tspan>peak <tspan fill="#A9C7EE" font-weight="bold">19:00–20:00</tspan><tspan fill="#76616B">  ·  </tspan><tspan fill="#F095C8" font-weight="bold">evening coder</tspan></text>
   <text x="24" y="302" fill="#B4E7C7">❯</text>
-  <rect x="40" y="292" width="8" height="13" fill="#F6EFF3"><animate attributeName="opacity" values="1;0" dur="1.06s" calcMode="discrete" repeatCount="indefinite"/></rect></g>
+  <rect class="cursor" x="40" y="292" width="8" height="13" fill="#F6EFF3"/></g>
 </svg>

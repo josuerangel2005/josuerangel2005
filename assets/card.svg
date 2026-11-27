@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="860" height="335" viewBox="0 0 860 335">
   <rect x="0.5" y="0.5" width="859" height="334" rx="10" fill="#060407" stroke="#2A1720"/>
   <path d="M0.5 32 H859.5" stroke="#2A1720"/>
+  <style>@keyframes blink{50%{opacity:0}}.cursor{animation:blink 1.06s steps(1) infinite}</style>
   <circle cx="20" cy="16" r="6" fill="#FF718F"/><circle cx="40" cy="16" r="6" fill="#F2B86D"/><circle cx="60" cy="16" r="6" fill="#B4E7C7"/>
   <text x="430" y="20" text-anchor="middle" font-size="11" fill="#76616B" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">josuerangel2005@github: ~ — fastfetch</text>
   <g font-size="10" fill="#F095C8" opacity="0.9" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace"><text x="156.0" y="52" textLength="60">.-+#%%%%*=</text><text x="144.0" y="62.5" textLength="90">=#@@@@@@@@@@@#=</text><text x="138.0" y="73" textLength="102">#@@@@@@@@@@@@@@@#</text><text x="132.0" y="83.5" textLength="114">:@%%%#######%%%@@@=</text><text x="132.0" y="94" textLength="114">@@###*******###%%@@</text><text x="126.0" y="104.5" textLength="126">=@##**+++++++***##@@:</text><text x="126.0" y="115" textLength="126">+%%%##*+===++*##%#%@:</text><text x="120.0" y="125.5" textLength="132">:*%%#####*++*#####%%@:</text><text x="114.0" y="136" textLength="144">:####%###*#*#**#%###%#*:</text><text x="120.0" y="146.5" textLength="138">+*##****##*##****###**:</text><text x="120.0" y="157" textLength="132">:##**+++**+*#++++*###=</text><text x="126.0" y="167.5" textLength="120">.-#++++**+**++++*#+=</text><text x="138.0" y="178" textLength="96">+#**#######***#*</text><text x="144.0" y="188.5" textLength="84">+#**********#*</text><text x="144.0" y="199" textLength="84">-%##**++**###=</text><text x="138.0" y="209.5" textLength="102">=##########**##+=</text><text x="108.0" y="220" textLength="144">.:-+*+##*******+****=+=:</text><text x="72.0" y="230.5" textLength="204">.:-==+++*@*++*******++++====%%+=-:</text><text x="60.0" y="241" textLength="240">-=+++=====+@*++==++==========#%++++++=-.</text><text x="54.0" y="251.5" textLength="264">-+==========+*=====------===*%#+======++++=:</text><text x="48.0" y="262" textLength="282">-+================-------=--=++============+++.</text><text x="42.0" y="272.5" textLength="294">-+==================--------=====-=============+.</text><text x="36.0" y="283" textLength="300">:+=============-====--=---======---===============</text><text x="30.0" y="293.5" textLength="312">.+=============--------=--------------====--=======-</text><text x="30.0" y="304" textLength="318">=+==+=======--------------------------------========.</text></g>
@@ -13,7 +14,7 @@
   <text x="400" y="163"><tspan fill="#A9C7EE" font-weight="bold">Focus</tspan><tspan fill="#F6EFF3">: Desarrollo Web &amp; Flujos de trabajo AI-assisted</tspan></text>
   <text x="400" y="182"><tspan fill="#A9C7EE" font-weight="bold">OS</tspan><tspan fill="#F6EFF3">: Arch Linux</tspan></text>
   <text x="400" y="201"><tspan fill="#A9C7EE" font-weight="bold">LinkedIn</tspan><tspan fill="#F6EFF3">: linkedin.com/in/josue-rangel-b089b0381</tspan></text>
-  <text x="400" y="220"><tspan fill="#A9C7EE" font-weight="bold">Repos</tspan><tspan fill="#F6EFF3">: 28 · Stars 1 · Followers 5 · Contribs 491</tspan></text>
+  <text x="400" y="220"><tspan fill="#A9C7EE" font-weight="bold">Repos</tspan><tspan fill="#F6EFF3">: 28 · Stars 1 · Followers 5 · Contribs 492</tspan></text>
   <text x="400" y="239" fill="#A9C7EE" font-weight="bold">Langs</text>
   <rect x="456.0" y="230" width="209.4" height="9" rx="2" fill="#3178c6"/>
   <rect x="667.4" y="230" width="98.8" height="9" rx="2" fill="#b07219"/>
@@ -34,5 +35,5 @@
   <rect x="556" y="269" width="26" height="14" fill="#B9E3E8"/>
   <rect x="582" y="269" width="26" height="14" fill="#F6EFF3"/>
   <text x="400" y="306" fill="#B4E7C7">❯</text>
-  <rect x="418" y="295" width="8" height="14" fill="#F6EFF3"><animate attributeName="opacity" values="1;0" dur="1.06s" calcMode="discrete" repeatCount="indefinite"/></rect></g>
+  <rect class="cursor" x="418" y="295" width="8" height="14" fill="#F6EFF3"/></g>
 </svg>
