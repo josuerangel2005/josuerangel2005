@@ -142,7 +142,8 @@ function renderCard(stats) {
   const maxChars = Math.floor((W - x - 20) / charW);
   // Wrap a value onto continuation lines aligned after "Key: ".
   const wrap = (text, first, rest) => {
-    const words = text.split(" ");
+    // Hard-split any single word (e.g. a URL) longer than the line.
+    const words = text.split(" ").flatMap((w) => w.match(new RegExp(`.{1,${rest}}`, "g")) ?? [w]);
     const out = [];
     let cur = "";
     for (const w of words) {
@@ -165,7 +166,7 @@ function renderCard(stats) {
       y += step;
     });
   };
-  for (const [k, v] of profile.fields) if (v) line(k, v);
+  for (const [k, v] of profile.fields) if (v) line(k, v.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""));
   line("Repos", `${stats.repos} · Stars ${stats.stars} · Followers ${stats.followers} · Contribs ${stats.contribs}`);
 
   // Language bar

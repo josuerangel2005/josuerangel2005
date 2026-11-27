@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/metrics.svg" alt="isometric contributions calendar and languages" width="100%">
+  <img src="assets/metrics.svg" alt="isometric contributions calendar and languages">
 </p>
 
 <p align="center"><sub>
