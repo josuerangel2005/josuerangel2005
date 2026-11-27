@@ -14,13 +14,13 @@
   <text x="400" y="163"><tspan fill="#A9C7EE" font-weight="bold">Focus</tspan><tspan fill="#F6EFF3">: Desarrollo Web &amp; Flujos de trabajo AI-assisted</tspan></text>
   <text x="400" y="182"><tspan fill="#A9C7EE" font-weight="bold">OS</tspan><tspan fill="#F6EFF3">: Arch Linux</tspan></text>
   <text x="400" y="201"><tspan fill="#A9C7EE" font-weight="bold">LinkedIn</tspan><tspan fill="#F6EFF3">: linkedin.com/in/josue-rangel-b089b0381</tspan></text>
-  <text x="400" y="220"><tspan fill="#A9C7EE" font-weight="bold">Repos</tspan><tspan fill="#F6EFF3">: 28 · Stars 1 · Followers 5 · Contribs 492</tspan></text>
+  <text x="400" y="220"><tspan fill="#A9C7EE" font-weight="bold">Repos</tspan><tspan fill="#F6EFF3">: 28 · Stars 1 · Followers 7 · Contribs 523</tspan></text>
   <text x="400" y="239" fill="#A9C7EE" font-weight="bold">Langs</text>
-  <rect x="456.0" y="230" width="209.4" height="9" rx="2" fill="#3178c6"/>
-  <rect x="667.4" y="230" width="98.8" height="9" rx="2" fill="#b07219"/>
-  <rect x="768.2" y="230" width="23.2" height="9" rx="2" fill="#3572A5"/>
-  <rect x="793.4" y="230" width="14.8" height="9" rx="2" fill="#e34c26"/>
-  <rect x="810.2" y="230" width="12.7" height="9" rx="2" fill="#000080"/>
+  <rect x="456.0" y="230" width="209.3" height="9" rx="2" fill="#3178c6"/>
+  <rect x="667.3" y="230" width="98.8" height="9" rx="2" fill="#b07219"/>
+  <rect x="768.0" y="230" width="23.2" height="9" rx="2" fill="#3572A5"/>
+  <rect x="793.2" y="230" width="14.8" height="9" rx="2" fill="#e34c26"/>
+  <rect x="810.0" y="230" width="12.7" height="9" rx="2" fill="#000080"/>
   <text x="400" y="258" font-size="11"><tspan fill="#3178c6">●</tspan><tspan fill="#F6EFF3"> TypeScript 55%</tspan></text>
   <text x="526" y="258" font-size="11"><tspan fill="#b07219">●</tspan><tspan fill="#F6EFF3"> Java 26%</tspan></text>
   <text x="610" y="258" font-size="11"><tspan fill="#3572A5">●</tspan><tspan fill="#F6EFF3"> Python 7%</tspan></text>
