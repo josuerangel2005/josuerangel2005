@@ -13,7 +13,7 @@
   <text x="400" y="163"><tspan fill="#A9C7EE" font-weight="bold">Focus</tspan><tspan fill="#F6EFF3">: Desarrollo Web &amp; Flujos de trabajo AI-assisted</tspan></text>
   <text x="400" y="182"><tspan fill="#A9C7EE" font-weight="bold">OS</tspan><tspan fill="#F6EFF3">: Arch Linux</tspan></text>
   <text x="400" y="201"><tspan fill="#A9C7EE" font-weight="bold">LinkedIn</tspan><tspan fill="#F6EFF3">: linkedin.com/in/josue-rangel-b089b0381</tspan></text>
-  <text x="400" y="220"><tspan fill="#A9C7EE" font-weight="bold">Repos</tspan><tspan fill="#F6EFF3">: 28 · Stars 1 · Followers 5 · Contribs 490</tspan></text>
+  <text x="400" y="220"><tspan fill="#A9C7EE" font-weight="bold">Repos</tspan><tspan fill="#F6EFF3">: 28 · Stars 1 · Followers 5 · Contribs 491</tspan></text>
   <text x="400" y="239" fill="#A9C7EE" font-weight="bold">Langs</text>
   <rect x="456.0" y="230" width="209.4" height="9" rx="2" fill="#3178c6"/>
   <rect x="667.4" y="230" width="98.8" height="9" rx="2" fill="#b07219"/>
@@ -33,5 +33,6 @@
   <rect x="530" y="269" width="26" height="14" fill="#F095C8"/>
   <rect x="556" y="269" width="26" height="14" fill="#B9E3E8"/>
   <rect x="582" y="269" width="26" height="14" fill="#F6EFF3"/>
-  <text x="400" y="306" fill="#B4E7C7">❯ <tspan fill="#F6EFF3">_</tspan></text></g>
+  <text x="400" y="306" fill="#B4E7C7">❯</text>
+  <rect x="418" y="295" width="8" height="14" fill="#F6EFF3"><animate attributeName="opacity" values="1;0" dur="1.06s" calcMode="discrete" repeatCount="indefinite"/></rect></g>
 </svg>
